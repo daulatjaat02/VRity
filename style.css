@@ -7,7 +7,6 @@
 body {
   height: 100vh;
   width: 100vw;
-  background: url(imgs/firstBg.png) #d3d3d300 0px 0px / 165.228% 100% no-repeat;
 }
 nav {
   position: absolute;
@@ -41,20 +40,20 @@ nav li a:hover {
   color: rgb(8, 6, 6);
   transition: all 0.3s ease-in-out;
 }
-nav .logo {
+.logo {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-nav .logoHead {
+.logoHead {
   display: flex;
 }
-nav #vr {
+.vr {
   font-size: 15.161px;
   font-weight: bolder;
   letter-spacing: 4.169px;
 }
-nav #ity {
+.ity {
   font-size: 15.161px;
   letter-spacing: 4.169px;
 }
@@ -71,7 +70,7 @@ nav .navIcon i:hover {
   transition: all 0.3s ease-in-out;
 }
 .first {
-  /* background: url(imgs/firstBg.png) #d3d3d300 0px 0px / 165.228% 100% no-repeat; */
+  background: url(imgs/firstBg.png) #d3d3d300 0px 0px / 165.228% 100% no-repeat;
   backdrop-filter: blur(400px);
   width: 100vw;
   height: 590px;
@@ -132,7 +131,6 @@ nav .navIcon i:hover {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-family: Montserrat;
   font-size: 85px;
   font-weight: 500;
   flex-shrink: 0;
@@ -308,6 +306,8 @@ nav .navIcon i:hover {
 }
 form {
   display: flex;
+  padding: 0 0 0 85px;
+  gap: 12px;
 }
 form div {
 }
@@ -325,7 +325,241 @@ form input {
   font-size: 16px;
   font-weight: 100;
 }
+.btnCall {
+  overflow: auto;
+  width: 147px;
+  height: 51px;
+  flex-shrink: 0;
+  border-radius: 50px;
+  background: var(
+    --GRADIENT-ELEMENS,
+    linear-gradient(93deg, #00d1ff 1.04%, #ff50e3 49.12%, #ad00ff 96.6%)
+  );
+  color: var(--WHITE-CONTENT, #fff);
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  border: none;
+  line-height: normal;
+  position: relative;
+  top: 44px;
+  left: 0px;
+  z-index: 16;
+}
+.checkbox {
+  width: 232px;
+  height: 13px;
+  top: 50px;
+  left: -100px;
+}
+.circle-svg-6 {
+  position: relative;
+  bottom: 50px;
+  left: 42px;
+  height: 83px;
+  filter: blur(2px);
+  width: 59px;
+}
+.accept {
+  position: relative;
+  display: inline-block;
+  top: 28px;
+  left: 28px;
+  font-size: 11px;
+  font-weight: 100;
+}
+.policy {
+  text-decoration: underline;
+}
+.want {
+  position: relative;
+  top: 42px;
+  font-weight: 100;
+  right: 48px;
+  font-family: "Bungee Outline";
+  font-size: 30px;
+  background: linear-gradient(
+    97deg,
+    #fff -2.81%,
+    rgba(255, 255, 255, 0) 103.92%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* ///////////////////////////////////////////////////// */
+/* section - 4  */
 
+.section-4 {
+  color: white;
+  background-color: #333;
+  height: 305px;
+}
+.photo-bg {
+  position: relative;
+  left: 94px;
+  height: 171px;
+  border-radius: 500px;
+  width: 99px;
+  background: var(
+    --TEAM-GRADIENT,
+    linear-gradient(142deg, #00d1ff 9.56%, #fa00ff 81.76%),
+    #fff
+  );
+  padding: 0px 27px 0px 53px;
+  margin: 0 23px 0 23px;
+}
+.section-4-Head {
+  padding: 0px 128px;
+  font-size: 29px;
+  font-weight: 500;
+  font-family: "Bungee Outline";
+  height: 55px;
+  position: relative;
+  bottom: 120px;
+}
+.team {
+  display: flex;
+  position: relative;
+  bottom: 60px;
+}
+.teamImg {
+  position: relative;
+  bottom: 178px;
+  left: 161px;
+  border-radius: 0 0 61px 34px;
+  width: 115px;
+}
+.teamHalf {
+  position: relative;
+  width: 115px;
+  bottom: 380px;
+  left: 161px;
+}
+.nelsonImg {
+  position: relative;
+  bottom: 179px;
+  left: 134px;
+  border-radius: 0 0 68px 59px;
+  width: 152px;
+}
+.nelsonHalf {
+  position: relative;
+  width: 152px;
+  bottom: 388px;
+  left: 133px;
+}
+.burnsImg {
+  position: relative;
+  bottom: 181px;
+  left: 115px;
+  border-radius: 0 0 83px 87px;
+  width: 181px;
+}
+.burnsHalf {
+  position: relative;
+  width: 181px;
+  bottom: 391px;
+  left: 116px;
+}
+.higaImg {
+  position: relative;
+  bottom: 184px;
+  left: 133px;
+  border-radius: 0 0 75px 65px;
+  width: 155px;
+}
+.higaHalf {
+  position: relative;
+  width: 155px;
+  bottom: 386px;
+  left: 133px;
+}
+.nameH5 {
+  position: relative;
+  bottom: 245px;
+  left: 160px;
+  font-weight: 100;
+  font-size: 17px;
+}
+.nelsonName {
+  bottom: 260px;
+}
+.burnsName {
+  left: 149px;
+}
+.nameP {
+  font-size: 14px;
+  position: relative;
+  bottom: 244px;
+  font-weight: 100;
+  left: 158px;
+  color: #929292;
+}
+.nelsonP {
+  bottom: 259px;
+  left: 148px;
+}
+.circle-svg-7 {
+  position: relative;
+  bottom: 339px;
+  left: 955px;
+  width: 66px;
+}
+.circle-svg-8 {
+  position: relative;
+  bottom: 742px;
+  left: 496px;
+  filter: blur(2px);
+  width: 38px;
+}
+/* //////////////////////////////////////// */
+/* section- 5 */
+.section-5 {
+  color: white;
+  background: url(imgs/firstBg.png) #d3d3d300 0px 0px / 165.228% 100% no-repeat;
+  height: 430px;
+}
+.section-5-Head {
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
+  z-index: 100;
+}
+.svg-last {
+  width: 100vw;
+  position: relative;
+  z-index: 0;
+  bottom: 105px;
+}
+.contacts {
+  padding: 0px 75px;
+  margin: 0px 370px 0 4px;
+  font-size: 34px;
+  font-weight: 500;
+  font-family: "Bungee Outline";
+  height: 67px;
+  position: relative;
+  bottom: 19px;
+}
+.bottomText {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  bottom: 256px;
+  padding: 0 55px;
+}
+.bottomText h6 {
+  font-size: 14px;
+  font-weight: 100;
+  line-height: 45px;
+}
+.bottomText div {
+  margin: 0 40px;
+}
+/* //////////////////////////////////////////////////////////////////// */
 /* @media screen and (max-width: 550px) {
   .sidebar {
     display: none;
