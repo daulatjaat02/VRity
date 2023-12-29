@@ -4,7 +4,10 @@
   padding: 0;
   font-family: "Work Sans", sans-serif;
 }
-body {
+body,
+html {
+  margin: 0;
+  padding: 0;
   height: 100vh;
   width: 100vw;
 }
@@ -12,7 +15,7 @@ nav {
   position: absolute;
   z-index: 10;
   width: 100vw;
-  padding: 23px;
+  padding: 23px 0;
   color: white;
   display: flex;
   justify-content: space-around;
@@ -557,60 +560,485 @@ form input {
   line-height: 45px;
 }
 .bottomText div {
-  margin: 0 40px;
+  margin: 0 45px;
 }
-/* //////////////////////////////////////////////////////////////////// */
-/* @media screen and (max-width: 550px) {
-  .sidebar {
+/* //////////////////////////////////////////////////////////////////////////////////////////////*/
+@media screen and (max-width: 400px) {
+  header {
     display: none;
   }
-  .close-btn {
+  /* //////////////////////////////// */
+  /* section - 1 */
+  .first {
+    height: 255px;
+  }
+  .first .firstImg {
+    width: 220px;
+    background-size: 233px;
+    height: 240px;
+    top: 31px;
+    right: 14px;
+  }
+  .firstHead {
+    top: 18px;
+    left: 193px;
+  }
+  #virtual {
+    height: 49px;
+    font-size: 31px;
+    right: 171px;
+    top: 30px;
+  }
+  #reality {
+    right: 144px;
+    font-size: 35px;
+    top: 36px;
+  }
+  .what {
+    width: 98px;
+    height: 24px;
+    font-size: 9px;
+    top: 37px;
+    left: -85px;
+  }
+  .circle-svg-1 {
+    top: -492px;
+    left: 37px;
+    width: 30px;
+  }
+  .circle-svg-2 {
+    position: relative;
+    top: -950px;
+    left: 984px;
+    width: 51px;
+    filter: blur(4px);
+  }
+  .circle-svg-3 {
+    left: 130px;
+    width: 41px;
+    height: 34px;
+    top: 173px;
+  }
+  .vector-1 {
     display: none;
   }
-  .sidebar {
-    display: inline-block;
-    position: fixed;
-    top: 1rem;
-    right: 2rem;
-    font-size: 1rem;
-    background: transparent;
-    border-color: transparent;
-    color: rgb(70, 70, 70);
-    transition: all 0.3s linear;
-    cursor: pointer;
-    animation: bounce 2s ease-in-out infinite;
+  .vector-2 {
+    display: none;
   }
-  .sidebar:hover {
-    color: rgb(7, 7, 7);
+  .vector-3 {
+    display: none;
   }
-  @keyframes bounce {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.5);
-    }
-    100% {
-      transform: scale(1);
-    }
+  /* ////////////////////// */
+  /* section - 2 */
+  .section-2 {
+    height: 210px;
+  }
+  .circle-svg-4 {
+    height: 26px;
+    left: -417px;
+  }
+  .circle-svg-5 {
+    top: 180px;
+    right: 509px;
+    height: 20px;
+  }
+  .oculus img {
+    bottom: -54px;
+    height: 97px;
+    left: -115px;
+  }
+  .vector-5 img {
+    left: 7px;
+    top: 198px;
+    width: 218px;
+  }
+  .section-2-second {
+    padding: 34px 0 0 50px;
+  }
+  .WhatVR2 {
+    position: relative;
+    top: -10px;
+    right: 336px;
+    font-size: 16px;
+  }
+  .Ps2 {
+    top: -23px;
+    right: 361px;
+    font-size: 11px;
+    line-height: 11px;
+    padding: 0 0 0 48px;
+  }
+  .try {
+    position: relative;
+    right: 453px;
+    bottom: 26px;
+    padding: 0;
+  }
+  .tryText {
+    width: 127px;
+    top: 14px;
+    left: 124px;
+    font-size: 10px;
+  }
+  .tryImg {
+    position: relative;
+    width: 100px;
+    left: 15px;
+    top: 8px;
+  }
+  .tryIcon {
+    bottom: 15px;
+    right: -51px;
+    height: 17px;
+  }
+  .btnVd {
+    bottom: 66px;
+    left: -208px;
+    font-size: 11px;
   }
 
-  .close-btn {
-    margin-top: 4px;
-    padding-top: 5px;
-    padding-right: 7px;
-    font-size: 1.5rem;
-    background: transparent;
-    border-color: transparent;
-    transition: all 0.3s linear;
-    color: rgb(255, 0, 0);
-    cursor: pointer;
+  /* ////////////////////////////////////////// */
+  /* section - 3 */
+  .section-3 {
+    color: white;
+    background-color: #333;
+    height: 410px;
   }
-  .close-btn:hover {
-   transform: rotate(360deg);
-    color: rgb(171, 107, 107);
+  .interested {
+    padding: 0 36px;
+    font-size: 20px;
+    font-weight: 500;
+    height: 35px;
   }
-  .show-sidebar {
-    transform: translate(0);
+  .Ps3 {
+    padding: 0 38px;
+    font-size: 11px;
   }
-} */
+  .form {
+    display: flex;
+  }
+  form {
+    flex-direction: column;
+    padding: 0 0 0 45px;
+    padding: 0 0 0 45px;
+    gap: 0;
+    bottom: 28px;
+    position: relative;
+  }
+  form div {
+    height: 65px;
+  }
+  form input {
+    color: white;
+    position: relative;
+    border-radius: 54px;
+    padding: 0 0 0 12px;
+    width: 255px;
+    height: 46px;
+    background: none;
+    border: none;
+    top: 48px;
+    left: 2px;
+    font-size: 16px;
+    font-weight: 100;
+  }
+  .btnCall {
+    width: 267px;
+  }
+  .checkbox {
+    width: 232px;
+    height: 13px;
+    top: 50px;
+    left: -100px;
+  }
+  .circle-svg-6 {
+    bottom: 11px;
+    left: 296px;
+    height: 35px;
+  }
+  .accept {
+    position: relative;
+    display: inline-block;
+    top: 28px;
+    left: 28px;
+    font-size: 11px;
+    font-weight: 100;
+  }
+  .policy {
+    text-decoration: underline;
+  }
+  .want {
+    top: 16px;
+    right: -186px;
+    width: 124px;
+    font-size: 18px;
+    background-clip: text;
+  }
+  /* ///////////////////////////////////////////////////// */
+  /* section - 4  */
+
+  .section-4 {
+    color: white;
+    background-color: #333;
+    height: 305px;
+  }
+  .photo-bg {
+    position: relative;
+    left: 94px;
+    height: 171px;
+    border-radius: 500px;
+    width: 99px;
+    background: var(
+      --TEAM-GRADIENT,
+      linear-gradient(142deg, #00d1ff 9.56%, #fa00ff 81.76%),
+      #fff
+    );
+    padding: 0px 27px 0px 53px;
+    margin: 0 23px 0 23px;
+  }
+  /* ///////////////////////////////////////////////////// */
+  /* section - 4  */
+
+  .section-4 {
+    height: 1100px;
+  }
+  .photo-bg {
+    position: relative;
+    left: 94px;
+    height: 171px;
+    border-radius: 500px;
+    width: 99px;
+    background: var(
+      --TEAM-GRADIENT,
+      linear-gradient(142deg, #00d1ff 9.56%, #fa00ff 81.76%),
+      #fff
+    );
+    padding: 0px 27px 0px 53px;
+    margin: 0 23px 0 23px;
+  }
+  .section-4-Head {
+    padding: 0px 61px;
+    font-size: 27px;
+    height: 68px;
+    bottom: 78px;
+    right: 25px;
+  }
+  .team {
+    display: flex;
+    position: relative;
+    bottom: 60px;
+    flex-direction: column;
+  }
+  .team div {
+  }
+  .teamMember {
+    height: 270px;
+    position: relative;
+    right: 24px;
+  }
+  .teamImg {
+    position: relative;
+    bottom: 178px;
+    left: 161px;
+    border-radius: 0 0 61px 34px;
+    width: 115px;
+  }
+  .teamHalf {
+    position: relative;
+    width: 115px;
+    bottom: 380px;
+    left: 161px;
+  }
+  .nelsonImg {
+    position: relative;
+    bottom: 179px;
+    left: 134px;
+    border-radius: 0 0 68px 59px;
+    width: 152px;
+  }
+  .nelsonHalf {
+    position: relative;
+    width: 152px;
+    bottom: 388px;
+    left: 133px;
+  }
+  .burnsImg {
+    position: relative;
+    bottom: 181px;
+    left: 115px;
+    border-radius: 0 0 83px 87px;
+    width: 181px;
+  }
+  .burnsHalf {
+    position: relative;
+    width: 181px;
+    bottom: 391px;
+    left: 116px;
+  }
+  .higaImg {
+    position: relative;
+    bottom: 184px;
+    left: 133px;
+    border-radius: 0 0 75px 65px;
+    width: 155px;
+  }
+  .higaHalf {
+    position: relative;
+    width: 155px;
+    bottom: 386px;
+    left: 133px;
+  }
+  .nameH5 {
+    position: relative;
+    bottom: 245px;
+    left: 160px;
+    font-weight: 100;
+    font-size: 17px;
+  }
+  .nelsonName {
+    bottom: 260px;
+  }
+  .burnsName {
+    left: 149px;
+  }
+  .nameP {
+    font-size: 14px;
+    position: relative;
+    bottom: 244px;
+    font-weight: 100;
+    left: 158px;
+    color: #929292;
+  }
+  .nelsonP {
+    bottom: 259px;
+    left: 148px;
+  }
+  .team {
+    display: flex;
+    position: relative;
+    bottom: 60px;
+  }
+  .teamImg {
+    position: relative;
+    bottom: 178px;
+    left: 161px;
+    border-radius: 0 0 61px 34px;
+    width: 115px;
+  }
+  .teamHalf {
+    position: relative;
+    width: 115px;
+    bottom: 380px;
+    left: 161px;
+  }
+  .nelsonImg {
+    position: relative;
+    bottom: 179px;
+    left: 134px;
+    border-radius: 0 0 68px 59px;
+    width: 152px;
+  }
+  .nelsonHalf {
+    position: relative;
+    width: 152px;
+    bottom: 388px;
+    left: 133px;
+  }
+  .burnsImg {
+    position: relative;
+    bottom: 181px;
+    left: 115px;
+    border-radius: 0 0 83px 87px;
+    width: 181px;
+  }
+  .burnsHalf {
+    position: relative;
+    width: 181px;
+    bottom: 391px;
+    left: 116px;
+  }
+  .higaImg {
+    position: relative;
+    bottom: 184px;
+    left: 133px;
+    border-radius: 0 0 75px 65px;
+    width: 155px;
+  }
+  .higaHalf {
+    position: relative;
+    width: 155px;
+    bottom: 386px;
+    left: 133px;
+  }
+  .nameH5 {
+    position: relative;
+    bottom: 245px;
+    left: 160px;
+    font-weight: 100;
+    font-size: 17px;
+  }
+  .nelsonName {
+    bottom: 260px;
+  }
+  .burnsName {
+    left: 149px;
+  }
+  .nameP {
+    font-size: 14px;
+    position: relative;
+    bottom: 244px;
+    font-weight: 100;
+    left: 158px;
+    color: #929292;
+  }
+  .nelsonP {
+    bottom: 259px;
+    left: 148px;
+  }
+  .circle-svg-7 {
+    bottom: 126px;
+    left: 311px;
+    width: 39px;
+  }
+  .circle-svg-8 {
+    position: relative;
+    bottom: 742px;
+    left: 496px;
+    filter: blur(2px);
+    width: 38px;
+  }
+  /* //////////////////////////////////////*/
+  /* section - 5 */
+  .section-5 {
+    color: white;
+    background: url(imgs/firstBg.png) #d3d3d300 0px 0px / 165.228% 100%
+      no-repeat;
+    height: 430px;
+  }
+  .section-5-Head {
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    z-index: 100;
+  }
+  .svg-last {
+    bottom: 193px;
+  }
+  .contacts {
+    padding: 0;
+    margin: 0;
+    font-size: 29px;
+  }
+  .bottomText {
+    position: relative;
+    display: inline;
+    padding: 0;
+    bottom: 325px;
+  }
+  .bottomText h6 {
+    font-size: 11px;
+  }
+  .bottomText div {
+    margin: 0 45px;
+  }
+}
